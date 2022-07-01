@@ -1,0 +1,325 @@
+MODULE 5
+ STORAGE AND DATABASES
+
+Instance stores and Amazon Elastic Block Store (Amazon EBS)
+
+Instance stores
+
+Block-level storage volumes behave like physical hard drives.
+An instance store provides temporary block-level storage for an Amazon EC2 instance. 
+An instance store is disk storage that is physically attached to the host computer for an EC2 instance, and 
+therefore has the same lifespan as the instance. When the instance is terminated, you lose any data in the instance store.
+
+Amazon EBS snapshots
+
+An EBS snapshot is an incremental backup. This means that the first backup taken of a volume copies all the data. 
+For subsequent backups, only the blocks of data that have changed since the most recent snapshot are saved. 
+Incremental backups are different from full backups, in which all the data in a storage volume copies each time a backup occurs.
+ The full backup includes data that has not changed since the most recent backup.
+
+Amazon Simple Storage Service (Amazon S3)
+
+Amazon Simple Storage Service (Amazon S3)
+
+Amazon Simple Storage Service (Amazon S3) is a service that provides object-level storage. Amazon S3 stores data as objects in buckets.
+
+You can upload any type of file to Amazon S3, such as images, videos, text files, and so on. For example, you might use Amazon S3 to store backup files, media files for a website, or archived documents.
+ Amazon S3 offers unlimited storage space. The maximum file size for an object in Amazon S3 is 5 TB.
+
+Amazon S3 storage classes
+
+With Amazon S3, you pay only for what you use. You can choose from a range of storage classes to select a fit for your business and cost needs. When selecting an Amazon S3 storage class, consider these two factors:
+
+How often you plan to retrieve your data
+How available you need your data to be
+
+Amazon Elastic File System (Amazon EFS)
+Amazon Elastic File System (Amazon EFS) is a scalable file system used with AWS Cloud services and on-premises resources. As you add and remove files, Amazon EFS grows 
+and shrinks automatically. It can scale on demand to petabytes without disrupting applications. 
+
+MODULE 5 QUESTIONS
+
+1)Which Amazon S3 storage classes are optimized for archival data? (Select TWO.)
+
+S3 Standard
+
+S3 Glacier
+
+S3 Intelligent-Tiering
+
+S3 Standard-IA
+
+S3 Glacier Deep Archieve
+ANS:B,E
+
+
+2)Which statement or statements are TRUE about Amazon EBS volumes and Amazon EFS file systems?
+
+EBS volumes store data within a single Availability Zone. Amazon EFS file systems store data across multiple Availability Zones.
+
+EBS volumes store data across multiple Availability Zones. Amazon EFS file systems store data within a single Availability Zone.
+
+EBS volumes and Amazon EFS file systems both store data within a single Availability Zone.
+
+EBS volumes and Amazon EFS file systems both store data across multiple Availability Zones.
+ANS:A
+
+
+3)You want to store data in an object storage service. Which AWS service is best for this type of storage?
+
+Amazon Managed Blockchain
+
+Amazon Elastic File System (Amazon EFS)
+
+Amazon Elastic Block Store (Amazon EBS)
+
+Amazon Simple Storage Service (Amazon S3)
+ANS:D
+
+4)Which statement best describes Amazon DynamoDB?
+
+A service that enables you to run relational databases in the AWS Cloud
+
+A serverless key-value database service
+
+A service that you can use to migrate relational databases, nonrelational databases, and other types of data stores
+
+An enterprise-class relational database
+ANS:B
+5)Which service is used to query and analyze data across a data warehouse?
+
+Amazon Redshift
+
+Amazon Neptune
+
+Amazon DocumentDB
+
+Amazon ElastiCache
+ANS:A
+
+
+
+MODULE 6
+
+SECURITY
+
+The AWS shared responsibility model
+
+Throughout this course, you have learned about a variety of resources that you can create in the AWS Cloud. 
+These resources include Amazon EC2 instances, Amazon S3 buckets, and Amazon RDS databases.
+ Who is responsible for keeping these resources secure: you (the customer) or AWS?
+The answer is both. The reason is that you do not treat your AWS environment as a single object.
+ Rather, you treat the environment as a collection of parts that build upon each other. AWS is responsible for some parts of your environment and you (the customer)
+ are responsible for other parts. This concept is known as the shared responsibility model.
+
+User permissions and access
+AWS Identity and Access Management (IAM)
+
+AWS Identity and Access Management (IAM) enables you to manage access to AWS services and resources securely.   
+
+IAM gives you the flexibility to configure access based on your company’s specific operational and security needs. You do this by using a combination of IAM features, which are explored in detail in this lesson:
+
+IAM users, groups, and roles
+IAM policies
+Multi-factor authentication
+
+IAM users
+
+An IAM user is an identity that you create in AWS. It represents the person or application that interacts with AWS services and resources.
+ It consists of a name and credentials.
+By default, when you create a new IAM user in AWS, it has no permissions associated with it. To allow the IAM user to perform specific actions in AWS,
+ such as launching an Amazon EC2 instance or creating an Amazon S3 bucket, you must grant the IAM user the necessary permissions.
+
+AWS Organizations
+
+uppose that your company has multiple AWS accounts. You can use AWS Organizations to consolidate and manage multiple AWS accounts within a central location.
+When you create an organization, AWS Organizations automatically creates a root, which is the parent container for all the accounts in your organization. 
+In AWS Organizations, you can centrally control permissions for the accounts in your organization by using service control policies (SCPs). 
+SCPs enable you to place restrictions on the AWS services, resources, and individual API actions that users and roles in each account can access.
+
+MODULE 6 QUESTIONS
+
+1)Which statement best describes an IAM policy?
+
+An authentication process that provides an extra layer of protection for your AWS account
+
+A document that grants or denies permissions to AWS services and resources
+
+An identity that you can assume to gain temporary access to permissions
+
+The identity that is established when you first create an AWS account
+ANS:B
+
+2)An employee requires temporary access to create several Amazon S3 buckets. Which option would be the best choice for this task?
+
+AWS account root user
+
+IAM group
+
+IAM role
+
+Service control policy (SCP)
+ANS:C
+
+3)Which statement best describes the principle of least privilege?
+
+Adding an IAM user into at least one IAM group
+
+Checking a packet’s permissions against an access control list
+
+Granting only the permissions that are needed to perform specific tasks
+
+Performing a denial of service attack that originates from at least one device
+ANS:C
+
+4)Which service helps protect your applications against distributed denial-of-service (DDoS) attacks?
+
+Amazon GuardDuty
+
+Amazon Inspector
+
+AWS Artifact
+
+AWS Shield
+ANS:D
+
+5)Which task can AWS Key Management Service (AWS KMS) perform?
+
+Configure multi-factor authentication (MFA).
+
+Update the AWS account root user password.
+
+Create cryptographic keys.
+
+Assign permissions to users and groups.
+ANS:C
+
+
+MODULE 7
+MONITORING AND ANALYTICS
+
+Amazon CloudWatch
+
+Amazon CloudWatch is a web service that enables you to monitor and manage various metrics and configure alarm actions based on data from those metrics.
+CloudWatch uses metrics to represent the data points for your resources. AWS services send metrics to CloudWatch. 
+CloudWatch then uses these metrics to create graphs automatically that show how performance has changed over time. 
+
+AWS CloudTrail
+
+AWS CloudTrail records API calls for your account. The recorded information includes the identity of the API caller, the time of the API call, 
+the source IP address of the API caller, and more. You can think of CloudTrail as a “trail” of breadcrumbs (or a log of actions) that someone has left behind them.
+Recall that you can use API calls to provision, manage, and configure your AWS resources. With CloudTrail,
+ you can view a complete history of user activity and API calls for your applications and resources. 
+
+AWS Trusted Advisor
+
+AWS Trusted Advisor is a web service that inspects your AWS environment and provides real-time recommendations in accordance with AWS best practices.
+Trusted Advisor compares its findings to AWS best practices in five categories: cost optimization, performance, security, fault tolerance, and service limits. 
+For the checks in each category, Trusted Advisor offers a list of recommended actions and additional resources to learn more about AWS best practices. 
+
+MODULE 7 QUESTIONS
+
+1)Which actions can you perform using Amazon CloudWatch? (Select TWO.)
+
+Monitor your resources’ utilization and performance
+
+Receive real-time guidance for improving your AWS environment
+
+Compare your infrastructure to AWS best practices in five categories
+
+Access metrics from a single dashboard
+
+Automatically detect unusual account activity
+ANS:A,D
+
+2)Which service enables you to review the security of your Amazon S3 buckets by checking for open access permissions?
+
+Amazon CloudWatch
+
+AWS CloudTrail
+
+AWS Trusted Advisor
+
+Amazon GuardDuty
+ANS:C
+3)Which categories are included in the AWS Trusted Advisor dashboard? (Select TWO.)
+
+Reliability
+
+Performance
+
+Scalability
+
+Elasticity
+
+Fault tolerance
+ANS:B,E
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
