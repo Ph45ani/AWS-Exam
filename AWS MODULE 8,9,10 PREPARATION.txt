@@ -1,0 +1,345 @@
+MODULE 8
+
+PRICING AND SUPPORT
+
+AWS Free Tier
+
+The AWS Free Tier enables you to begin using certain services without having to worry about incurring costs for the specified period. 
+
+Three types of offers are available: 
+
+Always Free
+12 Months Free
+Trials
+AWS pricing concepts
+
+The AWS Pricing Calculator lets you explore AWS services and create an estimate for the cost of your use cases on AWS.
+ You can organize your AWS estimates by groups that you define. A group can reflect how your company is organized, such as providing estimates by cost center.
+
+Billing dashboard
+
+Use the AWS Billing & Cost Management dashboard to pay your AWS bill, monitor your usage, and analyze and control your costs.
+
+Compare your current month-to-date balance with the previous month, and get a forecast of the next month based on current usage.
+View month-to-date spend by service.
+View Free Tier usage by service.
+Access Cost Explorer and create budgets.
+Purchase and manage Savings Plans.
+Publish AWS Cost and Usage Reports.
+
+AWS Cost Explorer
+IT is a tool that enables you to visualize, understand, and manage your AWS costs and usage over time.
+AWS Cost Explorer includes a default report of the costs and usage for your top five cost-accruing AWS services.
+ You can apply custom filters and groups to analyze your data. For example, you can view resource usage at the hourly level.
+AWS Support plans
+AWS offers four different Support plans to help you troubleshoot issues, lower costs, and efficiently use AWS services. 
+
+You can choose from the following Support plans to meet your company’s needs: 
+
+Basic
+Developer
+Business
+Enterprise
+
+MODULE 8 QUESTIONS
+
+1)Which action can you perform with consolidated billing?
+
+Review how much cost your predicted AWS usage will incur by the end of the month.
+
+Create an estimate for the cost of your use cases on AWS.
+
+Combine usage across accounts to receive volume pricing discounts.
+
+Visualize and manage your AWS costs and usage over time.
+ANS:C
+2)Which pricing tool is used to visualize, understand, and manage your AWS costs and usage over time?
+
+AWS Pricing Calculator
+
+AWS Budgets
+
+AWS Cost Explorer
+
+AWS Free Tier
+ANS:C
+
+3)Which pricing tool enables you to receive alerts when your service usage exceeds a threshold that you have defined?
+
+Billing dashboard in the AWS Management Console
+
+AWS Budgets
+
+AWS Free Tier
+
+AWS Cost Explorer
+ANS:B
+
+4)Your company wants to receive support from an AWS Technical Account Manager (TAM). Which support plan should you choose?
+
+Developer
+
+Enterprise
+
+Basic
+
+Business
+ANS:B
+
+5)Which service or resource is used to find third-party software that runs on AWS?
+
+AWS Marketplace
+
+AWS Free Tier
+
+AWS Support
+
+Billing dashboard in the AWS Management Console
+ANS:A
+
+MODULE 9
+
+MIGRATION AND INNOVATION
+
+6 strategies for migration
+
+When migrating applications to the cloud, six of the most common migration strategies that you can implement are:
+
+Rehosting
+Replatforming
+Refactoring/re-architecting
+Repurchasing
+Retaining
+Retiring
+
+AWS Snow Family
+
+AWS Snow Family members
+
+The AWS Snow Family is a collection of physical devices that help to physically transport up to exabytes of data into and out of AWS. 
+
+AWS Snow Family is composed of AWS Snowcone, AWS Snowball, and AWS Snowmobile. 
+
+Innovation with AWS
+
+When examining how to use AWS services, it is important to focus on the desired outcomes. You are properly equipped to drive innovation in the cloud if you can clearly articulate the following conditions: 
+
+The current state
+The desired state
+The problems you are trying to solve
+
+MODULE 9 QUESTIONS
+
+1)Which Perspective of the AWS Cloud Adoption Framework helps you structure the selection and implementation of permissions?
+
+Governance Perspective
+
+Security Perspective
+
+Operations Perspective
+
+Business Perspective
+ANS:B
+2)Which strategies are included in the six strategies for application migration? (Select TWO.)
+
+Revisiting
+
+Retaining
+
+Remembering
+
+Redeveloping
+
+Rehosting
+ANS:B,E
+3)What is the storage capacity of AWS Snowmobile?
+
+40 PB
+
+60 PB
+
+80 PB
+
+100 PB
+ANS:D
+4)Which statement best describes Amazon Lex?
+
+A service that enables you to build conversational interfaces using voice and text
+
+A machine learning service that automatically extracts text and data from scanned documents
+
+A document database service that supports MongoDB workloads
+
+A service that enables you to identify potentially fraudulent online activities
+ANS:A
+
+MODULE 10
+
+THE CLOUD JOURNEY
+The AWS Well-Architected Framework
+The AWS Well-Architected Framework
+The AWS Well-Architected Framework helps you understand how to design and operate reliable,
+ secure, efficient, and cost-effective systems in the AWS Cloud. It provides a way for you to consistently measure
+ your architecture against best practices and design principles and identify areas for improvement.\
+
+Benefits of the AWS Cloud
+
+Advantages of cloud computing
+
+Operating in the AWS Cloud offers many benefits over computing in on-premises or hybrid environments. 
+
+In this section, you will learn about six advantages of cloud computing:
+
+Trade upfront expense for variable expense.
+Benefit from massive economies of scale.
+Stop guessing capacity.
+Increase speed and agility.
+Stop spending money running and maintaining data centers.
+Go global in minutes.
+
+MODULE 10 QUESTIONS
+
+1)Which pillar of the AWS Well-Architected Framework includes the ability to run workloads effectively and gain insights into their operations?
+
+Cost Optimization
+
+Operational Excellence
+
+Performance Efficiency
+
+Reliability
+ANS:B
+2)What are the benefits of cloud computing? (Select TWO.)
+
+Increase speed and agility.
+
+Benefit from smaller economies of scale.
+
+Trade variable expense for upfront expense.
+
+Maintain infrastructure capacity.
+
+Stop spending money running and maintaining data centers.
+ANSA,E
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
