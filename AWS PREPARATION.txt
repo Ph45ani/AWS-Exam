@@ -1,0 +1,90 @@
+AWS CLOUD PRACTISIONER ESSENTIALS
+
+MODULE 1 QUESTIONS
+
+1)What is cloud computing?
+
+Backing up files that are stored on desktop and mobile devices to prevent data loss
+
+Deploying applications connected to on-premises infrastructure
+
+Running code without needing to manage or provision servers
+
+On-demand delivery of IT resources and applications through the internet with pay-as-you-go pricing
+
+ANS:D
+2)What is another name for on-premises deployment?
+
+Private cloud deployment
+
+Cloud-based application
+
+Hybrid deployment
+
+AWS Cloud
+
+ANS:A
+3)How does the scale of cloud computing help you to save costs?
+
+You do not have to invest in technology resources before using them.
+
+The aggregated cloud usage from a large number of customers results in lower pay-as-you-go prices.
+
+Accessing services on-demand helps to prevent excess or limited capacity.
+
+You can quickly deploy applications to customers and provide them with low latency.
+ANS:B
+
+MODULE 2 QUESTIONS
+1)You want to use an Amazon EC2 instance for a batch processing workload. What would be the best Amazon EC2 instance type to use?
+
+General purpose
+
+Memory optimized
+
+Compute optimized
+
+Storage optimized
+ANS:C
+2)What are the contract length options for Amazon EC2 Reserved Instances? (Select TWO.)
+
+1 year
+
+2 years
+
+3 years
+
+4 years
+
+5 years
+ANS:A,C
+3)You have a workload that will run for a total of 6 months and can withstand interruptions. What would be the most cost-efficient Amazon EC2 purchasing option?
+
+Reserved Instance
+
+Spot Instance
+
+Dedicated Instance
+
+On-Demand Instance
+ANS:B
+4)Which process is an example of Elastic Load Balancing?
+
+Ensuring that no single Amazon EC2 instance has to carry the full workload on its own
+
+Removing unneeded Amazon EC2 instances when demand is low
+
+Adding a second Amazon EC2 instance during an online store’s popular sale
+
+Automatically adjusting the number of Amazon EC2 instances to meet demand
+ANS:A
+5)You want to deploy and manage containerized applications. Which service should you use?
+
+AWS Lambda
+
+Amazon Simple Notification Service (Amazon SNS)
+
+Amazon Simple Queue Service (Amazon SQS)
+
+Amazon Elastic Kubernetes Service (Amazon EKS)
+ANS:D
